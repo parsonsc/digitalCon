@@ -1,4 +1,8 @@
-
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
 
 @mixin respond-to($media, $min:"", $max:"") {
   @if $media == mobile {
