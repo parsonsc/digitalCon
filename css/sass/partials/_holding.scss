@@ -136,13 +136,18 @@ section.main_content h2 {
 	font-size: 70px;
 	font-family: 'axia-bold', arial, sans-serif;
 }
-
+section.main_content h1 {
+	color: white;
+	font-size: 80px;
+	// font-weight: 600;
+	font-family: 'stencil-black', arial, sans-serif;
+}
 section.main_content h2 {
 	padding: 0 80px;
 }
 
-.zones_section ul li {
-	width: 125px;
+.zones_section article {
+	width: 12%;
 	display: inline-block;
 	padding: 10px 25px 60px;
 	opacity: 0;
@@ -151,63 +156,64 @@ section.main_content h2 {
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	position: relative;
+	vertical-align: top;
+	position: relative;
 }
-.zones_section ul li span {
-	font-size: 20px;
-	letter-spacing: -0.2px;
-	color: $light_blue;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+.zones_section article p {
+	font-size: 18px;
+	letter-spacing: -0.3px;
+	color: white;
+	display: block;
+	position: relative;
 	width: 100%;
 }
-.zones_section ul li img {
+.zones_section article img {
 	width: 100%;
 }
-.zones_section ul li.zone_01 {
+.zones_section article.zone_01 {
 	-webkit-animation-delay: 1s; 
     animation-delay: 1s;
-    span {
+    p {
     	-webkit-animation-delay: 6s; 
     	animation-delay: 6s;
     }
 }
-.zones_section ul li.zone_02 {
+.zones_section article.zone_02 {
 	-webkit-animation-delay: 2s; 
     animation-delay: 2s;
-    span {
+    p {
 		-webkit-animation-delay: 7s; 
     	animation-delay: 7s;
     }
 }
-.zones_section ul li.zone_03 {
+.zones_section article.zone_03 {
 	-webkit-animation-delay: 3s; 
     animation-delay: 3s;
-    span {
+    p {
 		-webkit-animation-delay: 8s; 
     	animation-delay: 8s;
     }
 }
-.zones_section ul li.zone_04 {
+.zones_section article.zone_04 {
 	-webkit-animation-delay: 4s; 
     animation-delay: 4s;
-    span {
+    p {
 	-webkit-animation-delay: 9s; 
     	animation-delay: 9s;
     }
 }
-.zones_section ul li.zone_05 {
+.zones_section article.zone_05 {
 	-webkit-animation-delay: 5s; 
     animation-delay: 5s;
-    span {
+    p {
 		-webkit-animation-delay: 10s; 
     	animation-delay: 10s;
     }
 }
-.zones_section ul li.zone_06 {
+.zones_section article.zone_06 {
 	-webkit-animation-delay: 6s; 
     animation-delay: 6s;
-    span {
+    p {
 		-webkit-animation-delay: 11s; 
     	animation-delay: 11s;
     }
@@ -261,6 +267,33 @@ footer.holding_footer ul li a {
 		min-width: 96%;
 		padding: 0 2%;
 	}
+	header.holding_header {
+	    padding: 2% 0 100px;
+	}
+	.zones_section article {
+		width: 20%;
+		padding-bottom: 20px;
+	}
+	.zones_section article p {
+		font-size: 18px;
+		letter-spacing: -0.3px;
+		color: white;
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+
+	footer.holding_footer {
+		position: relative;
+		bottom: 0;
+		padding: 20px 0;
+	}
+	footer.holding_footer ul li {
+		display: inline-block;
+		padding: 10px;
+		margin: 0 30px;
+		font-size: 40px;
+	}
 }
 
 @include respond-to(mobile) {
@@ -279,6 +312,15 @@ footer.holding_footer ul li a {
 		min-width: 92%;
 		padding: 0 4%;
 	}
+	.animate_bg { 
+		background-position: 9% 0px;
+
+		animation: none;
+		-moz-animation: none;
+		-webkit-animation: none;
+		-ms-animation: none;
+		-o-animation: none;
+	}
 
 	header.holding_header {
 		padding: 2% 0 50px;
@@ -287,7 +329,7 @@ footer.holding_footer ul li a {
 		}
 	}
 	section.main_content {
-		padding-bottom: 100px;
+		padding-bottom: 0px;
 	}
 	section.main_content h1,
 	section.main_content h2 {
@@ -305,7 +347,18 @@ footer.holding_footer ul li a {
     	display: inline-block;
     	padding: 10px 9% 60px;
 	}
-	
+	.zones_section article {
+		width: 32%;
+		display: block;
+		float: left;
+		padding-bottom: 20px;
+		height:195px;
+	}
+	.zones_section article p {
+		font-size: 14px;
+		letter-spacing: -0.3px;
+		text-align: center;
+	}
 
 
 
